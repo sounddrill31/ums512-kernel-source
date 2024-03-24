@@ -31,11 +31,9 @@ $(warning MALI_PLATFORM_NAME: $(MALI_PLATFORM_NAME))
 
 ifeq ($(TARGET_BUILD_VARIANT),user)
   BUILD_ := release
-  export PVRSRV_NEED_PVR_DPF := 1
 else
 #  BUILD_ := debug
   BUILD_ := release
-  export PVRSRV_NEED_PVR_DPF := 1
 endif
 
 BUILD_ := release
